@@ -132,7 +132,6 @@ async fn fetch_all(http: &HttpClient) -> Result<Vec<ProductList>> {
         let resp = fetch_page(http, page).await?;
         all.extend(resp.data.products);
     }
-a
     Ok(all)
 }
 
